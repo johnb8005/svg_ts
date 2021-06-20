@@ -40,7 +40,7 @@ const FiboPaths = (props) => {
     curvatureRatio
   })));
 };
-export default (props) => {
+export default () => {
   const [curvatureRatio, setCurvatureRatio] = useState(goldenRatio - 1);
   const [displaySquares, setDisplaySquares] = useState(true);
   const [displayCircles, setDisplayCircles] = useState(true);
@@ -88,7 +88,7 @@ export default (props) => {
     min: wMin * 100,
     max: wMax * 100,
     value: w * 100,
-    onChange: (e) => setW(Number(e.target.value / 100))
+    onChange: (e) => setW(Number(e.target.value) / 100)
   })), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement("button", {
     onClick: () => {
       setW(wMin);

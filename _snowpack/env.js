@@ -1,4 +1,4 @@
-export const SNOWPACK_PUBLIC_GIT_SHA = "40db7c8c7ee2277535c89450d77b58cd5ee91fa5";
+export const SNOWPACK_PUBLIC_GIT_SHA = "f2ea87004f2c00118f6b1a6ec4f8ad334a92c7a9";
 export const SNOWPACK_PUBLIC_URL = "/svg_ts";
 export const MODE = "development";
 export const NODE_ENV = "development";
