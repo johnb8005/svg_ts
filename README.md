@@ -3,8 +3,8 @@
 [![Test](https://github.com/johnb8005/svg_ts/actions/workflows/test.yml/badge.svg)](https://github.com/johnb8005/svg_ts/actions/workflows/test.yml)
 [![Deploy](https://github.com/johnb8005/svg_ts/actions/workflows/deploy.yml/badge.svg)](https://github.com/johnb8005/svg_ts/actions/workflows/deploy.yml)
 [![Publish](https://github.com/johnb8005/svg_ts/actions/workflows/publish.yml/badge.svg)](https://github.com/johnb8005/svg_ts/actions/workflows/publish.yml)
-[![npm version](https://badge.fury.io/js/%40nexys%2Fsvg.svg)](https://www.npmjs.com/package/@johnb8005/svg)
-[![npm version](https://img.shields.io/npm/v/@nexys/svg.svg)](https://www.npmjs.com/package/@johnb8005/svg)
+[![npm version](https://badge.fury.io/js/%40nexys%2Fsvg.svg)](https://www.npmjs.com/package/@nexys/svg)
+[![npm version](https://img.shields.io/npm/v/@nexys/svg.svg)](https://www.npmjs.com/package/@nexys/svg)
 
 ## OLD
 
