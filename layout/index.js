@@ -3,7 +3,7 @@ import Footer from "./footer.js";
 import Header from "./header.js";
 import {BrowserRouter as Router} from "../_snowpack/pkg/react-router-dom.js";
 import {basename} from "../config.js";
-function Layout({children}) {
+const Layout = ({children}) => {
   return /* @__PURE__ */ React.createElement(Router, {
     basename
   }, /* @__PURE__ */ React.createElement("div", {
@@ -13,5 +13,5 @@ function Layout({children}) {
   }, /* @__PURE__ */ React.createElement("div", {
     className: "container"
   }, children, " ")), /* @__PURE__ */ React.createElement(Footer, null)));
-}
+};
 export default Layout;
