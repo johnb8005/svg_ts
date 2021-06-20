@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "../_snowpack/pkg/react.js";
 import {Layout} from "../lib/index.js";
-import {PathWSquare} from "../lib/path.js";
+import {PathWSquare} from "../lib/path/index.js";
 import * as U from "./utils.js";
 const FiboPaths = ({
   nIter,
