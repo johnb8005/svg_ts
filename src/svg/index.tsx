@@ -99,7 +99,7 @@ export const Trapeze = ({
   p2: Coord;
   p3: Coord;
   stroke?: Color;
-  fill?: Color;
+  fill?: Color | string;
 }) => {
   const p4 = { x: p3.x + (p2.x - p1.x), y: p1.y };
 

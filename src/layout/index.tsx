@@ -6,7 +6,7 @@ import Header from "./header";
 import { BrowserRouter as Router } from "react-router-dom";
 import { basename } from "../config";
 
-function Layout({ children }: { children: any }) {
+const Layout = ({ children }: { children: JSX.Element }) => {
   return (
     <Router basename={basename}>
       <div className="d-flex flex-column min-vh-100">
@@ -20,5 +20,6 @@ function Layout({ children }: { children: any }) {
       </div>
     </Router>
   );
-}
+};
+
 export default Layout;
