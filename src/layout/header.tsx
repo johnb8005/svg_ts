@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { menus } from "../links";
 import { title } from "../config";
+import IconLink from "../common/icon-link";
+
 const style = {
   borderTop: "1px solid #e5e5e5",
   borderBottom: "1px solid #e5e5e5",
@@ -23,6 +25,7 @@ export default () => (
             {menu.name}
           </Link>
         ))}
+        <IconLink name="code" />
       </nav>
     </div>
   </header>

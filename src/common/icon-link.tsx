@@ -1,7 +1,9 @@
 import React from "react";
 
+import { ghUrl } from "../config";
+
 export default ({ name }: { name: string }) => (
-  <a aria-label={name} href="https://github.com/johnb8005/svg">
+  <a aria-label={name} href={ghUrl}>
     <i className={`fa fa-${name}`} aria-hidden="true" />
   </a>
 );

@@ -1,5 +1,8 @@
 # SVG Fun
 
+[![Test](https://github.com/johnb8005/svg_ts/actions/workflows/test.yml/badge.svg)](https://github.com/johnb8005/svg_ts/actions/workflows/test.yml)
+[![Deploy](https://github.com/johnb8005/svg_ts/actions/workflows/deploy.yml/badge.svg)](https://github.com/johnb8005/svg_ts/actions/workflows/deploy.yml)
+
 ## OLD
 
 [![TavisCI](https://travis-ci.com/johnb8005/svg.svg?branch=master)](https://travis-ci.com/johnb8005/svg)
