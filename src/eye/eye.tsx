@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Circle, Square } from "../svg";
+import { Circle, Square } from "../lib";
 
 interface Coord {
   x: number;

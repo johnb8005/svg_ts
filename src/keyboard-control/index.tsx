@@ -1,7 +1,7 @@
 import React from "react";
 
-import Layout from "../svg/layout";
-import { Circle, Line, MovingDashLines } from "../svg";
+import Layout from "../lib/layout";
+import { Circle, Line, MovingDashLines } from "../lib";
 
 export default () => {
   const [height, setHeight] = React.useState(0);

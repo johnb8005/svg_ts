@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import { Layout, Circle, Square } from "../svg";
-import { Coord } from "../svg/type";
+import { Layout, Circle, Square } from "../lib";
+import { Coord } from "../lib/type";
 
 /**
  * checks whether point is in circle or not

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Layout, Point, Line, Rhombus } from "../svg";
+import { Layout, Point, Line, Rhombus } from "../lib";
 import { equationFromSegment, polyY, polyX } from "../math/polynom";
 
 import Eye from "./eye";

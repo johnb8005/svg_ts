@@ -1,4 +1,4 @@
-import { Coord } from "../svg/type";
+import { Coord } from "../lib/type";
 
 export const equationFromSegment = (p1: Coord, p2) => {
   const m = (p2.y - p1.y) / (p2.x - p1.x);

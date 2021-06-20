@@ -1,7 +1,7 @@
 import React from "react";
 
-import Layout from "../svg/layout";
-import { Trapeze, Triangle, MovingDashLines } from "../svg";
+import Layout from "../lib/layout";
+import { Trapeze, Triangle, MovingDashLines } from "../lib";
 
 export default () => {
   const h0 = 53;
