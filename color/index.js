@@ -1,6 +1,6 @@
 import React from "../_snowpack/pkg/react.js";
-import Layout from "../svg/layout.js";
-import {Trapeze} from "../svg/index.js";
+import Layout from "../lib/layout.js";
+import {Trapeze} from "../lib/index.js";
 import {toHex} from "./utils.js";
 import Range from "../common/range.js";
 export default () => {

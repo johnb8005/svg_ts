@@ -1,6 +1,6 @@
 import React from "../_snowpack/pkg/react.js";
-import Layout from "../svg/layout.js";
-import {Trapeze, Triangle, MovingDashLines} from "../svg/index.js";
+import Layout from "../lib/layout.js";
+import {Trapeze, Triangle, MovingDashLines} from "../lib/index.js";
 export default () => {
   const h0 = 53;
   const hMax = 125;

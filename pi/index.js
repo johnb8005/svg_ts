@@ -1,5 +1,5 @@
 import React, {useState} from "../_snowpack/pkg/react.js";
-import {Layout, Circle, Square} from "../svg/index.js";
+import {Layout, Circle, Square} from "../lib/index.js";
 const isInCircle = (p, circleC, r) => Math.pow(p.x - circleC.x, 2) + Math.pow(p.y - circleC.y, 2) < Math.pow(r, 2);
 export default () => {
   const r = 200;

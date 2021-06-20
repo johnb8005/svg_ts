@@ -1,5 +1,5 @@
 import React, {useState} from "../_snowpack/pkg/react.js";
-import {Layout, Point, Line, Rhombus} from "../svg/index.js";
+import {Layout, Point, Line, Rhombus} from "../lib/index.js";
 import {equationFromSegment, polyY, polyX} from "../math/polynom.js";
 import Eye from "./eye.js";
 export default () => {

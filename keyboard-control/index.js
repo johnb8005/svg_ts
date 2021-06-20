@@ -1,6 +1,6 @@
 import React from "../_snowpack/pkg/react.js";
-import Layout from "../svg/layout.js";
-import {Circle, Line, MovingDashLines} from "../svg/index.js";
+import Layout from "../lib/layout.js";
+import {Circle, Line, MovingDashLines} from "../lib/index.js";
 export default () => {
   const [height, setHeight] = React.useState(0);
   const [lr, setLr] = React.useState(0);

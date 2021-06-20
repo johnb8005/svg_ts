@@ -1,5 +1,5 @@
 import React from "../_snowpack/pkg/react.js";
-import {Circle, Square} from "../svg/index.js";
+import {Circle, Square} from "../lib/index.js";
 const getSquareCenter = (w, coords) => {
   const x = coords.x + w / 2;
   const y = coords.y + w / 2;
