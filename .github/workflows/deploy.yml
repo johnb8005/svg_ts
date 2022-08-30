@@ -1,26 +1,15 @@
 name: Deploy
 
-on:
-  # Trigger the workflow on push or pull request,
-  # but only for the master branch
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 18
-      - run: yarn
-      - run: yarn test
-      - name: Build page
-        run: VITE_GIT_SHA=$GITHUB_SHA yarn build --mode ghpages
+      - uses: nexys-system/gh-actions-spa-test@v1
+        build-command: VITE_VERSION=${GITHUB_REF##*/} VITE_GIT_SHA=$GITHUB_SHA yarn build --mode ghpages
       - name: add 404
-        run: cp build/index.html build/404.html
+        run: cp dist/index.html dist/404.html
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
