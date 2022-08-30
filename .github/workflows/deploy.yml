@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: nexys-system/gh-actions-spa-test@v1
+      - uses: nexys-system/gh-actions-spa-test@v0.0.20
         with:
           build-command: VITE_VERSION=${GITHUB_REF##*/} VITE_GIT_SHA=$GITHUB_SHA yarn build --mode ghpages
       - name: add 404
