@@ -5,6 +5,7 @@ export const menus: { name: string; link: string }[] = [
   { name: "Keyboard Control", link: "/keyboard-control" },
   { name: "Hourglass", link: "/hourglass" },
   { name: "Color", link: "/color" },
+  { name: "Circle", link: "/circle" },
 ];
 
 export const links = {};
