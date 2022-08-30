@@ -1,5 +1,6 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { basename } from "./config";
 
 import Eye from "./eye";
 import Fibonacci from "./fibonacci";
@@ -7,6 +8,7 @@ import Pi from "./pi";
 import KeyboardControl from "./keyboard-control";
 import Hourglass from "./hourglass";
 import Color from "./color/rgb";
+import Circle from "./circle";
 
 const NotFound = () => (
   <p>
@@ -28,15 +30,18 @@ const Public = () => (
 
 export default () => {
   return (
-    <Switch>
-      <Route path="/eye" component={Eye} />
-      <Route path="/fibonacci" component={Fibonacci} />
-      <Route path="/pi" component={Pi} />
-      <Route path="/keyboard-control" component={KeyboardControl} />
-      <Route path="/hourglass" component={Hourglass} />
-      <Route path="/color" component={Color} />
-      <Route path="/" component={Public} />
-      <Route path="/" component={NotFound} />
-    </Switch>
+    <BrowserRouter basename={basename}>
+      <Routes>
+        <Route path="/eye" element={<Eye />} />
+        <Route path="/fibonacci" element={<Fibonacci />} />
+        <Route path="/pi" element={<Pi />} />
+        <Route path="/keyboard-control" element={<KeyboardControl />} />
+        <Route path="/hourglass" element={<Hourglass />} />
+        <Route path="/color" element={<Color />} />
+        <Route path={"/circle"} element={<Circle />} />
+        <Route path="/" element={<Public />} />
+        <Route path="/" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
