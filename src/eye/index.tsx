@@ -28,7 +28,7 @@ export default () => {
   const [x, setX] = useState(x0);
   const [y, setY] = useState(polyY(x0, { m, q }) - w);
 
-  const onChange = (e, func) => {
+  const onChange = (e: any, _func: any) => {
     const v = Number(e.target.value);
     setX(v);
     const y = polyY(v, { m, q });

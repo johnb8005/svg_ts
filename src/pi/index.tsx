@@ -70,14 +70,16 @@ export default () => {
       <Layout>
         <Circle r={r} coord={circleC} />
         <Square w={r * 2} coords={squareC} />
-        {peas.map((p, i) => (
-          <Circle
-            stroke={isInCircle(p, circleC, r) ? "red" : "blue"}
-            key={i}
-            r={0.1}
-            coord={p}
-          />
-        ))}
+        <>
+          {peas.map((p, i) => (
+            <Circle
+              stroke={isInCircle(p, circleC, r) ? "red" : "blue"}
+              key={i}
+              r={0.1}
+              coord={p}
+            />
+          ))}
+        </>
       </Layout>
     </>
   );

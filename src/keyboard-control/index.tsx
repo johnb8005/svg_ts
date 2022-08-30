@@ -9,7 +9,13 @@ export default () => {
   const [moveIdx, setMoveIdx] = React.useState(0);
   const [dx, setDx] = React.useState(1);
 
-  const steer = (keyCode, keyCodeSet, max, value, setValue) => {
+  const steer = (
+    keyCode: any,
+    keyCodeSet: any,
+    max: number,
+    value: number,
+    setValue: (v: number) => void
+  ) => {
     const [kInc, kDec] = keyCodeSet;
     if (keyCode === kInc && value < max) {
       setValue(value + 1);
@@ -20,7 +26,7 @@ export default () => {
     }
   };
 
-  const onKeyDown = (a) => {
+  const onKeyDown = (a: any) => {
     steer(a.keyCode, [38, 40], 30, height, setHeight);
     steer(a.keyCode, [37, 39], 30, lr, setLr);
     const d = 1 + Math.abs(height);

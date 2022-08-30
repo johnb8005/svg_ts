@@ -15,7 +15,7 @@ export default () => {
     return (y - q) / m;
   };
 
-  const x2FromY = (y) => {
+  const x2FromY = (y: number) => {
     const m = (125 - 50) / (100 - 150);
     const q = 125 - m * 100;
 
